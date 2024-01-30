@@ -1,6 +1,6 @@
 {
   "name": "rn-marport-ui",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Marport Company's Component Pool",
   "main": "lib/commonjs/index",
   "module": "lib/module/index",
