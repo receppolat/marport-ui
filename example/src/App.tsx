@@ -1,18 +1,23 @@
 import * as React from 'react';
 
 import { StyleSheet, View, Text } from 'react-native';
-import { multiply } from 'rn-marport-ui';
+import { calculate, Button, Card } from 'rn-marport-ui';
 
 export default function App() {
   const [result, setResult] = React.useState<number | undefined>();
 
   React.useEffect(() => {
-    multiply(3, 7).then(setResult);
+    setResult(calculate(3, 7));
   }, []);
 
   return (
     <View style={styles.container}>
-      <Text>Result: {result}</Text>
+      <Card>
+        <Text>Result: {result}</Text>
+      </Card>
+      <Card>
+        <Button />
+      </Card>
     </View>
   );
 }
